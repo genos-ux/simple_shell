@@ -50,4 +50,7 @@ void output(char **valarg, char **environ)
 			free(ptr);
 			exit(EXIT_FAILURE);
 		}
+		else
+			wait(&state);
+	}
 }
