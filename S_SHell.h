@@ -10,7 +10,7 @@
 #include <limits.h>
 #include <string.h>
 
-void output(char **valarg, char **environ);
+void output(char **environ);
 
 
 #endif
