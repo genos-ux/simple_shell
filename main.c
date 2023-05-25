@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <shell.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -66,17 +66,5 @@ void output(char **environ)
 	}
 	}
 }
-/**
- * output - Entry Point
- *
- * @environ: environment variables
- *
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	char *environ[] = {NULL}; 
-	output(environ);
-	return 0;
-}
+
 
