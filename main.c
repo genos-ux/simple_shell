@@ -14,9 +14,22 @@
  */
 int main(int numArg, char **valarg, char **environ)
 {
-	if (numArg == 1)
-	{
-		output(valarg, environ);
-	}
-	return (0);
+    if (numArg == 1)
+    {
+        char *environ[] = {NULL};
+        output(valarg, environ);
+    }
+    else if (numArg > 1)
+    {
+
+        output(valarg + 1, environ);
+    }
+    return 0;
 }
+
+
+
+
+	
+
+
