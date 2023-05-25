@@ -14,7 +14,7 @@
  */
 int main(int numArg, char **valarg, char **environ)
 {
-	if (numArg== 1)
+	if (numArg == 1)
 	{
 		output(valarg, environ);
 	}
