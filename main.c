@@ -1,19 +1,22 @@
-#include "S_SHell.h"
+#include "shell.h"
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
 /**
  * main - Entry point
  *
- *@environ: takes environment character
- *@valarg: takes argument vector
- *@argNum: takes argument count
+ * @valarg: takes value
+ * @numArg: Takes value
+ * @environ: takes value
  *
- * Return: Always 0 (success)
+ * Return: Always void (success)
  */
-int main(int argNum, char **valarg, char **environ)
+int main(int numArg, char **valarg, char **environ)
 {
-	if (argNum == 1)
+	if (numArg== 1)
 	{
 		output(valarg, environ);
 	}
 	return (0);
 }
-
